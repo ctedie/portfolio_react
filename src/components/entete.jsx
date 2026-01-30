@@ -31,19 +31,3 @@ function Header()
 }
 
 export default Header
-
-/**
-             <nav className="navbar navbar-dark navbar-expand-lg bg-dark ">
-                <Container>
-                    <Navbar.Brand href="/">JOHN DOE</Navbar.Brand>
-                    <Nav>
-                        <Nav.Link className='hover' href="/">HOME</Nav.Link>
-                        <Nav.Link className='hover' href="/services">SERVICE</Nav.Link>
-                        <Nav.Link className='hover' href="/portfolio">PORTFOLIO</Nav.Link>
-                        <Nav.Link className='hover' href="/contact">CONTACT</Nav.Link>
-                        <Nav.Link className='hover' href="/mentions-legales">MENTIONS LÉGALES</Nav.Link>
-                    </Nav>
-                </Container>
-            </nav>
-
- */
