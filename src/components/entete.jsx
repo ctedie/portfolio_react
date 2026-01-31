@@ -31,3 +31,18 @@ function Header()
 }
 
 export default Header
+/**
+ *     <Navbar expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="/">MonApp</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="/">Accueil</Nav.Link>
+            <Nav.Link href="/about">À propos</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+
+ */
