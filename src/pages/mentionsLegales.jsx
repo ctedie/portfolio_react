@@ -45,12 +45,15 @@ function MentionsLegales() {
         <div class="accordion-item"> {/* Crédits */ }
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
+              Crédits
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <h2 id='titre-credits'>Crédits</h2> {/* TODO : Ajouter les liens */ }
+              <p>Ce site a été réalisé par John Doe, étudiant au <span>Centre Européen de formation</span>.</p>
+              <p><em>Les images utilisées sur ce site sont libre de droits et ont été obtenues sur le siter <a href="#">Pixabay</a></em></p>
+              <p><em>La favicon de ce site a été fournie par <a href="#">John Doe Icons erstelit von Freepik - Flaticon</a></em></p>
             </div>
           </div>
         </div>
