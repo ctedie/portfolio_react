@@ -1,3 +1,4 @@
+import Container from 'react-bootstrap/Container'
 import baniere from '../assets/img/banner.jpg'
 import freshFood from '../assets/img/portfolio/fresh-food.jpg'
 import restaurantAkira from '../assets/img/portfolio/restaurant-japonais.jpg'
@@ -5,6 +6,7 @@ import espaceBienEtre from '../assets/img/portfolio/espace-bien-etre.jpg'
 import seo from '../assets/img/portfolio/seo.jpg'
 import apiCreation from '../assets/img/portfolio/coder.jpg'
 import siteMockup from '../assets/img/portfolio/screens.jpg'
+import ItemPortfolio from '../components/ItemPortfolio'
 import './portfolio.css'
 
 
@@ -14,31 +16,26 @@ function Portfolio() {
     <>
       <img id="banniere" src={baniere} alt="Bannière Portfolio" />
       {/* TODO: Ajouter le titre de la page (composant) */}
-      <div className="portfolio flex column align-center col-md-8 col-lg-8">
-        <div className='contour'>
-          <img src={freshFood} alt="Fresh food" />
-          fresh food
-        </div>
-        <div className='contour'>
-          <img src={restaurantAkira} alt="Restaurant Akira" />
-          Restaurant Akira
-        </div>
-        <div className='contour'>
-          <img src={espaceBienEtre} alt="Espace bien-être" />
-          Espace bien-être
-        </div>
-        <div className='contour'>
-          <img src={seo} alt="SEO" />
-          SEO
-        </div>
-        <div className='contour'>
-          <img src={apiCreation} alt="Création d'une API" />
-          Création d'une API
-        </div>
-        <div className='contour'>
-          <img src={siteMockup} alt="Maquette d'un site web" />
-          Maquette d'un site web
-        </div>
+      <div className="portfolio col-md-6 col-lg-8">
+          <div>
+            <ItemPortfolio image={freshFood} alt="Fresh food" title="Fresh food" Description="Description de Fresh food" />
+          </div>
+          <div>
+            <ItemPortfolio image={restaurantAkira} alt="Restaurant Akira" title="Restaurant Akira" Description="Description de Restaurant Akira" />
+          </div>
+          <div>
+            <ItemPortfolio image={espaceBienEtre} alt="Espace bien-être" title="Espace bien-être" Description="Description de Espace bien-être" />
+          </div>
+          <div>
+            <ItemPortfolio image={seo} alt="SEO" title="SEO" Description="Description de SEO" />
+          </div>
+          <div>
+            <ItemPortfolio image={apiCreation} alt="Création d'une API" title="Création d'une API" Description="Description de Création d'une API" />
+          </div>
+          <div>
+            <ItemPortfolio image={siteMockup} alt="Maquette d'un site web" title="Maquette d'un site web" Description="Description de Maquette d'un site web" />
+          </div>
+
       </div>
 
     </>
