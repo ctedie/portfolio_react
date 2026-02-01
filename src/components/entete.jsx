@@ -1,14 +1,15 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
+
 import { NavLink } from 'react-router-dom'
 import './entete.css'
 
 function Header()
 {
     return (
-        <>
-            <nav className="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+        <div>
+            <nav className="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
                 <Container>
                     <div className="navbar-brand" href="/">JOHN DOE</div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +27,7 @@ function Header()
                     </div>
                 </Container>
             </nav>
-        </>
+        </div>
     )
 }
 

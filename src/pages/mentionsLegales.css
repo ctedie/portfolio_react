@@ -1,0 +1,18 @@
+h1
+{
+    margin-top: 10px;
+    padding-bottom: 30px;
+
+    border-bottom: 4px solid blue;
+    font-size: 72px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 75px;
+}
+
+p
+{
+    line-height: 1rem;
+
+    margin-bottom: 0.5rem;
+}
