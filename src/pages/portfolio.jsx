@@ -6,7 +6,9 @@ import espaceBienEtre from '../assets/img/portfolio/espace-bien-etre.jpg'
 import seo from '../assets/img/portfolio/seo.jpg'
 import apiCreation from '../assets/img/portfolio/coder.jpg'
 import siteMockup from '../assets/img/portfolio/screens.jpg'
+
 import ItemPortfolio from '../components/ItemPortfolio'
+import TitrePage from '../components/TitrePage'
 import './portfolio.css'
 
 
@@ -16,6 +18,7 @@ function Portfolio() {
     <>
       <img id="banniere" src={baniere} alt="Bannière Portfolio" />
       {/* TODO: Ajouter le titre de la page (composant) */}
+      <TitrePage titre="Portfolio" description="Voici quelques-unes de mes réalisations" />
       <div className="portfolio col-md-6 col-lg-8">
           <div>
             <ItemPortfolio image={freshFood} alt="Fresh food" title="Fresh food" Description="Description de Fresh food" />
