@@ -1,0 +1,24 @@
+.flex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.contour
+{
+    border: 2px solid #000;
+    margin: 10px;
+    padding: 0px;
+    width: 300px;
+    height: 350px;
+}
+
+img
+{
+    width: 100%;
+
+    object-fit: cover;
+}

@@ -1,5 +1,3 @@
-import Header from '../components/entete.jsx'
-import Footer from '../components/Foooter.jsx'
 import './services.css'
 
 import baniere from '../assets/img/banner.jpg'
