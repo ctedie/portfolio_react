@@ -41,3 +41,8 @@
     color: black;
     margin: 10px 0 1px 0;
 }
+
+#imgPrincipale {
+    width: 100%;
+    height: auto;
+}
