@@ -9,3 +9,10 @@ h1
     color: #333333;
     margin-bottom: 75px;
 }
+
+p
+{
+    line-height: 1rem;
+
+    margin-bottom: 0.5rem;
+}
