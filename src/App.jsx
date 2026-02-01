@@ -10,7 +10,9 @@ function App() {
 
   return (
     <>
-      <Header />
+      <div className="position-sticky top-0">
+        <Header />
+      </div>
       <Services />
       <Footer /> 
     </>

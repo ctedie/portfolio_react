@@ -9,7 +9,7 @@ function Header()
 {
     return (
         <div>
-            <nav className="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+            <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
                 <Container>
                     <div className="navbar-brand" href="/">JOHN DOE</div>
 
@@ -27,6 +27,7 @@ function Header()
                         </ul>
                     </div>
                 </Container>
+                
             </nav>
         </div>
     )
