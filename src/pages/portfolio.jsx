@@ -17,7 +17,6 @@ function Portfolio() {
   return (
     <>
       <img id="banniere" src={baniere} alt="Bannière Portfolio" />
-      {/* TODO: Ajouter le titre de la page (composant) */}
       <TitrePage titre="Portfolio" description="Voici quelques-unes de mes réalisations" />
       <div className="portfolio col-md-6 col-lg-8 space-around flex">
             <ItemPortfolio image={freshFood} alt="Fresh food" title="Fresh food" Description="Description de Fresh food" textFooter="Site réalisé avec PHP et MySQL" />
