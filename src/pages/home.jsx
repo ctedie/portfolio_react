@@ -1,6 +1,7 @@
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import imagePrincipale from '../assets/img/hero-bg.jpg'
 import photoJohn from '../assets/img/john-doe-about.jpg'
+import './home.css'
 
 
 function Home() {
@@ -8,8 +9,12 @@ function Home() {
   return (
     <>
 
-      <div className='d-flex justify-content-center mb-5'>
-        <img className='h-75' src={imagePrincipale} alt="photo principale" />
+      <div className='johndoe d-flex justify-content-center align-items-center mb-5'>
+        <div className='container text-white text-center'>
+          <h1 className='display-1 fw-bold'>Bonjour, je suis John Doe</h1>
+          <h2 className='display-4 fw-bold'>Développeur Web Full Stack</h2>
+          <button className='btn btn-danger'>En savoir plus</button>
+        </div>
       </div>
 
       <div className='container d-flex flex-column flex-md-row'>

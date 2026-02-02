@@ -1,43 +1,6 @@
-.infos
-{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    justify-content: space-evenly;
-    border: 2px solid black;
-    height: auto;
-    margin-top: 2rem;
-    /*min-width: 33%;*/
+.johndoe {
+  background-image: url("../assets/img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
-
-.infos__titre
-{
-    text-align: left;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 10px;
-    border-bottom: 2px solid blue;
-}
-
-.aPropos .competences
-{
-    max-width: 45%;
-    margin: auto;
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-}   
-
-.infos__photo
-{
-    width: 100%;
-}   
-
-
-.labelProgressBar
-{
-    color: black;
-    margin: 10px 0 1px 0;
-}
-
