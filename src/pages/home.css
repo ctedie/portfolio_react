@@ -31,8 +31,7 @@
 
 .infos__photo
 {
-    width: auto;
-    height: auto;
+    width: 100%;
 }   
 
 
@@ -42,7 +41,3 @@
     margin: 10px 0 1px 0;
 }
 
-#imgPrincipale {
-    width: 100%;
-    height: auto;
-}
