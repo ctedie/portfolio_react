@@ -1,11 +1,12 @@
 import React from 'react-bootstrap/Accordion'
+import TitrePage from '../components/TitrePage'
 import './mentionsLegales.css'
 
 function MentionsLegales() {
 
   return (
     <>
-      <h1>Mentions légales</h1>
+      <TitrePage titre="Mentions légales" />
       <div class="accordion col-lg-8" id="accordionExample">
         <div class="accordion-item"> {/* Éditeur du site */ }
           <h2 class="accordion-header" id="headingOne">
@@ -52,7 +53,7 @@ function MentionsLegales() {
             <div class="accordion-body">
               <h2 id='titre-credits'>Crédits</h2> {/* TODO : Ajouter les liens */ }
               <p>Ce site a été réalisé par John Doe, étudiant au <span>Centre Européen de formation</span>.</p>
-              <p><em>Les images utilisées sur ce site sont libre de droits et ont été obtenues sur le siter <a href="#">Pixabay</a></em></p>
+              <p><em>Les images utilisées sur ce site sont libre de droits et ont été obtenues sur le siter <a href="http://www.pixabay.com" target='blank'>Pixabay</a></em></p>
               <p><em>La favicon de ce site a été fournie par <a href="#">John Doe Icons erstelit von Freepik - Flaticon</a></em></p>
             </div>
           </div>
