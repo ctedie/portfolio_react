@@ -1,5 +1,11 @@
 import React from 'react-bootstrap/Accordion'
 import TitrePage from '../components/TitrePage'
+
+import map from '../assets/img/map.svg'
+import localisation from '../assets/img/geo-alt.svg'
+import phone from '../assets/img/phone.svg'
+import email from '../assets/img/envelope-at.svg'
+
 import './mentionsLegales.css'
 
 function MentionsLegales() {
@@ -7,22 +13,22 @@ function MentionsLegales() {
   return (
     <>
       <TitrePage titre="Mentions légales" />
-      <div class="accordion col-lg-8" id="accordionExample">
-        <div class="accordion-item"> {/* Éditeur du site */ }
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <div className="accordion container col-lg-8" id="accordionExample">
+        <div className="accordion-item"> {/* Éditeur du site */ }
+          <h2 className="accordion-header" id="headingOne">
+            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Editeur du site
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+          <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div className="accordion-body">
               <div>
                 {/* TODO : Ajouter les icones */}
                 <h2>John Doe</h2>
-                <p>40 rue Laure Diebold</p>
-                <p>69009 Lyon, France</p>
-                <p>Téléphone : 06 12 34 56 78</p>
-                <p>Email : john.doe@example.com</p>
+                <p><img src={map} alt="icone carte" /> 40 rue Laure Diebold</p>
+                <p><img src={localisation} alt="icone localisation" />69009 Lyon, France</p>
+                <p><img src={phone} alt="icone téléphone" /> 06 12 34 56 78</p>
+                <p><img src={email} alt="icone email" /> john.doe@example.com</p>
               </div>
             </div>
           </div>
