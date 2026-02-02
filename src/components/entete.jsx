@@ -9,7 +9,7 @@ function Header()
 {
     return (
         <div>
-            <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
+            <nav className="navbar sticky-top z-3 navbar-dark navbar-expand-lg bg-dark">
                 <Container>
                     <div className="navbar-brand" href="/">JOHN DOE</div>
 

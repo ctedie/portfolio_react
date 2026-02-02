@@ -16,6 +16,7 @@ function Portfolio() {
 
   return (
     <>
+    
       <img id="banniere" src={baniere} alt="Bannière Portfolio" />
 
       <TitrePage titre="Portfolio" description="Voici quelques-unes de mes réalisations" />
