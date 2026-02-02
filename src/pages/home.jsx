@@ -6,6 +6,8 @@ import './home.css'
 
 function Home() {
 
+
+
   return (
     <>
 
@@ -13,9 +15,39 @@ function Home() {
         <div className='container text-white text-center'>
           <h1 className='display-1 fw-bold'>Bonjour, je suis John Doe</h1>
           <h2 className='display-4 fw-bold'>Développeur Web Full Stack</h2>
-          <button className='btn btn-danger'>En savoir plus</button>
+          <button className='btn btn-danger' type="button" data-bs-toggle="modal" data-bs-target="#johndoeModal">En savoir plus</button>
         </div>
       </div>
+
+
+
+
+
+{/* Modal Example */}
+
+{/* <!-- Modal --> */}
+<div className="modal fade" id="johndoeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog modal-dialog-centered ">
+    <div className="modal-content">
+      <div className="modal-header bg-dark text-light">
+        <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body bg-dark text-white">
+        ...
+      </div>
+      <div className="modal-footer bg-dark text-white">
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" className="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+{/* End Modal Example */}
+
+
+
+
 
       <div className='container d-flex flex-column flex-md-row'>
         <div className='container w-md-50'>
