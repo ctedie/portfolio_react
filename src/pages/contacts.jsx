@@ -1,5 +1,6 @@
 import baniere from '../assets/img/banner.jpg'
 import TitrePage from '../components/TitrePage'
+import TitrSectionsContact from '../components/TitreSectionsContact';
 import { CiMap, CiLocationOn } from "react-icons/ci";
 import { FiSmartphone } from "react-icons/fi";
 import { BsEnvelopeAt } from "react-icons/bs";
@@ -13,7 +14,7 @@ function Contacts() {
       {/* <div className="contacts container col-md-6 col-lg-8 d-flex flex-column flex-md-row justify-content-between align-items-start mx-auto my-5"> */}
       <div className="contacts container d-flex flex-column flex-md-row justify-content-md-between">
         <div className="">
-          <h2>Formulaire de contact</h2>
+          <TitrSectionsContact titre="Formulaire de contact" />
           <form className=' mb-5 '>
             <div className="mb-3">
               <input type="text" className="form-control" id="name" placeholder="Votre nom" />
@@ -32,7 +33,7 @@ function Contacts() {
         </div>
 
         <div className="contact-coordonnees">
-          <h2>Mes coordonnées</h2>
+          <TitrSectionsContact titre="Mes coordonnées" />
           <h3>John Doe</h3>
           <p><CiMap size={18} /> 40 rue Laure Diebold</p>
           <p><CiLocationOn size={18} /> 69009 Lyon, France</p>
