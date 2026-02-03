@@ -4,6 +4,7 @@ import TitrePage from '../components/TitrePage'
 import { CiMap, CiLocationOn } from "react-icons/ci";
 import { FiSmartphone } from "react-icons/fi";
 import { BsEnvelopeAt } from "react-icons/bs";
+import { FaGlobe } from "react-icons/fa";
 
 import './mentionsLegales.css'
 
@@ -22,7 +23,6 @@ function MentionsLegales() {
           <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div className="accordion-body">
               <div>
-                {/* TODO : Ajouter les icones */}
                 <h2>John Doe</h2>
                 <p><CiMap size={18} /> 40 rue Laure Diebold</p>
                 <p><CiLocationOn size={18} /> 69009 Lyon, France</p>
@@ -42,8 +42,8 @@ function MentionsLegales() {
             <div class="accordion-body">
               <div>
                 <h2 id='titre-hebergeur'>alwaysdata</h2>
-                <p>91 Rue Faubourge Saint-Honoré, 75009 Paris</p>
-                <a href="#">www.alwaysdata.com</a> {/* TODO : Ajouter le lien et l'icone*/ }
+                <p>91 Rue Faubourge Saint-Honoré, 75008 Paris</p>
+                <a href="#"><FaGlobe className="me-2 icon" />www.alwaysdata.com</a> {/* TODO : Ajouter le lien et l'icone*/ }
               </div>
             </div>
           </div>

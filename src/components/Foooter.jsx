@@ -18,6 +18,7 @@ function Footer()
               40 rue Laure Diebold<br />
               69009 Lyon, France <br />
               Tel : 06 12 34 56 78<br />
+              john.doe@gmail.com<br />
             </p>
             <a className="text-secondary me-3" href="https://github.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoGithub size={24} /></a>
             <a className="text-secondary me-3" href="https://twitter.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoTwitter size={24} /></a>
@@ -39,12 +40,14 @@ function Footer()
           {/* Colonne 3 */}
           <Col md={4} className='mt-3'>
             <h5>Mes dernières réalisations</h5>
-            <p className="small mb-1">Fresh Food</p>
-            <p className="small">Restaurent Akira</p>
-            <p className="small mb-1">Espace bien-être</p>
-            <p className="small">SEO</p>
-            <p className="small mb-1">Création d'une API</p>
-            <p className="small">Maquette d'un site</p>
+            <Nav className="flex-column">
+              <Nav.Link href="/portfolio" className="text-light p-0 mb-1">Fresh Food</Nav.Link>
+              <Nav.Link href="/portfolio" className="text-light p-0 mb-1">Restaurent Akira</Nav.Link>
+              <Nav.Link href="/portfolio" className="text-light p-0 mb-1">Espace bien-être</Nav.Link>
+              <Nav.Link href="/portfolio" className="text-light p-0 mb-1">SEO</Nav.Link>
+              <Nav.Link href="/portfolio" className="text-light p-0 mb-1">Création d'une API</Nav.Link>
+              <Nav.Link href="/portfolio" className="text-light p-0 mb-1">Maquette d'un site</Nav.Link>
+            </Nav>
           </Col>
         </Row>
       </Container>
