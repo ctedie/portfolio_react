@@ -1,6 +1,8 @@
 import baniere from '../assets/img/banner.jpg'
 import TitrePage from '../components/TitrePage'
-
+import { CiMap, CiLocationOn } from "react-icons/ci";
+import { FiSmartphone } from "react-icons/fi";
+import { BsEnvelopeAt } from "react-icons/bs";
 
 function Contacts() {
 
@@ -32,10 +34,10 @@ function Contacts() {
         <div className="contact-coordonnees">
           <h2>Mes coordonnées</h2>
           <h3>John Doe</h3>
-          <p>40 rue Laure Diebold</p>
-          <p>69009 Lyon, France</p>
-          <p>Téléphone : 06 12 34 56 78</p>
-          <p>john.doe@gmail.com</p>
+          <p><CiMap size={18} /> 40 rue Laure Diebold</p>
+          <p><CiLocationOn size={18} /> 69009 Lyon, France</p>
+          <p><FiSmartphone size={18} /> Téléphone : 06 12 34 56 78</p>
+          <p><BsEnvelopeAt size={18} /> john.doe@gmail.com</p>
           <div className="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=TON_CODE_ICI"

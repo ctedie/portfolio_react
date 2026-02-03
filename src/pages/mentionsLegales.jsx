@@ -1,10 +1,9 @@
 import React from 'react-bootstrap/Accordion'
 import TitrePage from '../components/TitrePage'
 
-import map from '../assets/img/map.svg'
-import localisation from '../assets/img/geo-alt.svg'
-import phone from '../assets/img/phone.svg'
-import email from '../assets/img/envelope-at.svg'
+import { CiMap, CiLocationOn } from "react-icons/ci";
+import { FiSmartphone } from "react-icons/fi";
+import { BsEnvelopeAt } from "react-icons/bs";
 
 import './mentionsLegales.css'
 
@@ -25,10 +24,10 @@ function MentionsLegales() {
               <div>
                 {/* TODO : Ajouter les icones */}
                 <h2>John Doe</h2>
-                <p><img src={map} alt="icone carte" /> 40 rue Laure Diebold</p>
-                <p><img src={localisation} alt="icone localisation" />69009 Lyon, France</p>
-                <p><img src={phone} alt="icone téléphone" /> 06 12 34 56 78</p>
-                <p><img src={email} alt="icone email" /> john.doe@example.com</p>
+                <p><CiMap size={18} /> 40 rue Laure Diebold</p>
+                <p><CiLocationOn size={18} /> 69009 Lyon, France</p>
+                <p><FiSmartphone size={18} /> 06 12 34 56 78</p>
+                <p><BsEnvelopeAt size={18} /> john.doe@example.com</p>
               </div>
             </div>
           </div>
