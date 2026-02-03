@@ -21,7 +21,7 @@ function Portfolio() {
 
       <TitrePage titre="Portfolio" description="Voici quelques-unes de mes réalisations" />
 
-      <div className="container col-md-6 col-lg-6 d-flex flex-wrap justify-content-around mb-5">
+      <div className="container col-md-6 col-lg-8 d-flex flex-wrap justify-content-around mb-5">
         <ItemPortfolio image={freshFood} alt="Fresh food" title="Fresh food" Description="Description de Fresh food" textFooter="Site réalisé avec PHP et MySQL" />
         <ItemPortfolio image={restaurantAkira} alt="Restaurant Akira" title="Restaurant Akira" Description="Description de Restaurant Akira" textFooter="Site réalisé avec WordPress" />
         <ItemPortfolio image={espaceBienEtre} alt="Espace bien-être" title="Espace bien-être" Description="Description de Espace bien-être" textFooter="Site réalisé avec LARAVEL" />

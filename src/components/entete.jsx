@@ -19,11 +19,11 @@ function Header()
                     
                     <div className="collapse navbar-collapse justify-content-end" id="menu">
                         <ul className="navbar-nav ">
-                            <li className='nav-item'><a className="nav-link active" aria-current="page" href="#">HOME</a></li>
-                            <li className='nav-item'><a className="nav-link" href="#">SERVICES</a></li>
-                            <li className='nav-item'><a className="nav-link" href="#">PORTFOLIO</a></li>
-                            <li className='nav-item'><a className="nav-link" href="#">CONTACT</a></li>
-                            <li className='nav-item'><a className="nav-link" href="#">MENTIONS LÉGALES</a></li>
+                            <li className='nav-item'><a className="nav-link active" aria-current="page" href="/">HOME</a></li>
+                            <li className='nav-item'><a className="nav-link" href="/services">SERVICES</a></li>
+                            <li className='nav-item'><a className="nav-link" href="/portfolio">PORTFOLIO</a></li>
+                            <li className='nav-item'><a className="nav-link" href="/contacts">CONTACT</a></li>
+                            <li className='nav-item'><a className="nav-link" href="/mentions-legales">MENTIONS LÉGALES</a></li>
                         </ul>
                     </div>
                 </Container>
