@@ -8,10 +8,11 @@ function Contacts() {
     <>
       <img id="banniere" src={baniere} alt="Bannière" />
       <TitrePage titre="Contact" description="Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact." />
-      <div className="contacts col-md-6 col-lg-8 flex space-around">
-        <div className="contact-form">
+      {/* <div className="contacts container col-md-6 col-lg-8 d-flex flex-column flex-md-row justify-content-between align-items-start mx-auto my-5"> */}
+      <div className="contacts container d-flex flex-column flex-md-row justify-content-md-between">
+        <div className="">
           <h2>Formulaire de contact</h2>
-          <form>
+          <form className=' mb-5 '>
             <div className="mb-3">
               <input type="text" className="form-control" id="name" placeholder="Votre nom" />
             </div>
@@ -24,7 +25,7 @@ function Contacts() {
             <div className="mb-3">
               <textarea className="form-control" id="message" rows="3" placeholder="Sujet"></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">Envoyer</button>
+            <button className="btn btn-primary d-block mx-auto" type="submit">Envoyer</button>
           </form>
         </div>
 
@@ -35,16 +36,19 @@ function Contacts() {
           <p>69009 Lyon, France</p>
           <p>Téléphone : 06 12 34 56 78</p>
           <p>john.doe@gmail.com</p>
-{/*           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9999999999995!2d2.294481315674!3d48.858370079287!"
-            width="100%"
-            height="400"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
- */}        </div>
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=TON_CODE_ICI"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Map"
+            />
+          </div>
+        </div>
       </div>
     </>
   )
