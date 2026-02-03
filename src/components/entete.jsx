@@ -20,19 +20,19 @@ function Header()
                     <div className="collapse navbar-collapse justify-content-end" id="menu">
                         <ul className="navbar-nav ">
                             <li className='nav-item'>
-                                <NavLink to="/" end className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>HOME</NavLink>
+                                <NavLink to="/" end className={({ isActive }) => "nav-link" + (isActive ? " active" : "") + " header-link"}>HOME</NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink to="/services" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>SERVICES</NavLink>
+                                <NavLink to="/services" className={({ isActive }) => "nav-link" + (isActive ? " active" : "") + " header-link"}>SERVICES</NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink to="/portfolio" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>PORTFOLIO</NavLink>
+                                <NavLink to="/portfolio" className={({ isActive }) => "nav-link" + (isActive ? " active" : "") + " header-link"}>PORTFOLIO</NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink to="/contacts" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>CONTACT</NavLink>
+                                <NavLink to="/contacts" className={({ isActive }) => "nav-link" + (isActive ? " active" : "") + " header-link"}>CONTACT</NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink to="/mentions-legales" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>MENTIONS LÉGALES</NavLink>
+                                <NavLink to="/mentions-legales" className={({ isActive }) => "nav-link" + (isActive ? " active" : "") + " header-link"}>MENTIONS LÉGALES</NavLink>
                             </li>
                         </ul>
                     </div>
