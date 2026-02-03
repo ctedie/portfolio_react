@@ -23,9 +23,9 @@ function Footer()
               john.doe@gmail.com<br />
             </p>
             <ul className="flex-row justify-content-start navbar-nav">
-              <li className='nav-item'><NavLink className="icone-reseaux text-secondary me-1 p-0" to="https://github.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoGithub size={24} /></NavLink></li>
-              <li className='nav-item'><NavLink className="icone-reseaux text-secondary me-1 p-0" to="https://twitter.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoTwitter size={24} /></NavLink></li>
-              <li className='nav-item'><NavLink className="icone-reseaux text-secondary p-0" to="https://linkedin.com/in/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size={24} /></NavLink></li>
+              <li className='nav-item'><NavLink className="text-secondary me-1 p-0" to="https://github.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoGithub size={24} className='icone-reseaux'/></NavLink></li>
+              <li className='nav-item'><NavLink className="text-secondary me-1 p-0" to="https://twitter.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoTwitter size={24} className='icone-reseaux' /></NavLink></li>
+              <li className='nav-item'><NavLink className="text-secondary p-0" to="https://linkedin.com/in/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size={24} className='icone-reseaux'/></NavLink></li>
             </ul>
           </Col>
 

@@ -1,0 +1,12 @@
+.nav-link {
+  color: var(--bs-light); /* couleur par défaut */
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  font-weight: bold; /* gras au survol */
+}
+
+.icone-reseaux:hover {
+  color: var(--bs-light); /* couleur spécifique pour GitHub au survol */
+}
