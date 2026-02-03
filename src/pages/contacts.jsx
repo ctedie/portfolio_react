@@ -14,8 +14,8 @@ function Contacts() {
       <img id="banniere" src={baniere} alt="Bannière" />
       <TitrePage titre="Contact" description="Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact." />
       {/* <div className="contacts container col-md-6 col-lg-8 d-flex flex-column flex-md-row justify-content-between align-items-start mx-auto my-5"> */}
-      <div className="contacts container d-flex flex-column flex-md-row justify-content-md-between">
-        <div className="">
+      <div className="contacts container shadow d-flex flex-column flex-md-row justify-content-md-between">
+        <div className="container">
           <TitrSectionsContact titre="Formulaire de contact" />
           <form className=' mb-5 '>
             <div className="mb-3">
