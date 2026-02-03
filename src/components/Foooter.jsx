@@ -17,6 +17,7 @@ function Footer()
             <p className="small">
               40 rue Laure Diebold<br />
               69009 Lyon, France <br />
+              Tel : 06 12 34 56 78<br />
             </p>
             <a className="text-secondary me-3" href="https://github.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoGithub size={24} /></a>
             <a className="text-secondary me-3" href="https://twitter.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoTwitter size={24} /></a>
