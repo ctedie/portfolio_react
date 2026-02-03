@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav'
 import { IoLogoGithub, IoLogoTwitter, IoLogoLinkedin } from "react-icons/io";
 
+import './Footer.css'
+
 function Footer()
 {
   return (
@@ -20,11 +22,11 @@ function Footer()
               Tel : 06 12 34 56 78<br />
               john.doe@gmail.com<br />
             </p>
-            <Nav className="flex-row justify-content-start">
-              <Nav.Link className="text-secondary me-3 p-0" href="https://github.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoGithub size={24} /></Nav.Link>
-              <Nav.Link className="text-secondary me-3 p-0" href="https://twitter.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoTwitter size={24} /></Nav.Link>
-              <Nav.Link className="text-secondary p-0" href="https://linkedin.com/in/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size={24} /></Nav.Link>
-            </Nav>
+            <ul className="flex-row justify-content-start navbar-nav">
+              <li className='nav-item'><NavLink className="icone-reseaux text-secondary me-1 p-0" to="https://github.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoGithub size={24} /></NavLink></li>
+              <li className='nav-item'><NavLink className="icone-reseaux text-secondary me-1 p-0" to="https://twitter.com/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoTwitter size={24} /></NavLink></li>
+              <li className='nav-item'><NavLink className="icone-reseaux text-secondary p-0" to="https://linkedin.com/in/JohnDoe" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size={24} /></NavLink></li>
+            </ul>
           </Col>
 
           {/* Colonne 2 */}
