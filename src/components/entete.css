@@ -1,4 +1,10 @@
-.hover:hover
+.header-link:hover
 {
+    text-decoration: underline;
+}
+
+.header-link.active
+{
+    font-weight: bold;
     text-decoration: underline;
 }
