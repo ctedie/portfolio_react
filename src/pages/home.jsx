@@ -16,6 +16,9 @@ function Home() {
 
         const data = await res.json();
         setUser(data);
+        if (!data) {
+          console.error("Erreur lors de la récupération des données utilisateur");
+        }
     };
 
     fetchUser();
@@ -42,12 +45,17 @@ function Home() {
               <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body bg-dark text-white d-flex flex-column align-items-start">
-              <img src={user.avatar_url} alt={user.login} className="" width="120"/>
-              <p className="border-secondary border-1 border-bottom w-100">{user.name}</p>
-              <p className="border-secondary border-1 border-bottom w-100">NOTHING</p>
-              <p className="border-secondary border-1 border-bottom w-100">Repositories : {user.public_repos}</p>
-              <p className="border-secondary border-1 border-bottom w-100">Followers : {user.followers}</p>
-              <p className="">Following : {user.following}</p>
+              {user ? (
+                <>
+                  <img src={user.avatar_url} alt="Photo de profil de John Doe"/>
+                  <p className="border-bottom border-secondary w-100"><a href="https://github.com/JohnDoe" target="_blank">{user.name}</a></p>
+                  <p className="border-bottom border-secondary w-100">Repositories : {user.public_repos}</p>
+                  <p className="border-bottom border-secondary w-100">Followers : {user.followers}</p>
+                  <p>Following : {user.following}</p>
+                </>
+              ) : (
+                <p>Chargement du profil...</p>
+              )}
             </div>
             <div className="modal-footer bg-dark text-white">
               <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
