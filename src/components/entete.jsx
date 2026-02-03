@@ -19,11 +19,21 @@ function Header()
                     
                     <div className="collapse navbar-collapse justify-content-end" id="menu">
                         <ul className="navbar-nav ">
-                            <li className='nav-item'><a className="nav-link active" aria-current="page" href="/">HOME</a></li>
-                            <li className='nav-item'><a className="nav-link" href="/services">SERVICES</a></li>
-                            <li className='nav-item'><a className="nav-link" href="/portfolio">PORTFOLIO</a></li>
-                            <li className='nav-item'><a className="nav-link" href="/contacts">CONTACT</a></li>
-                            <li className='nav-item'><a className="nav-link" href="/mentions-legales">MENTIONS LÉGALES</a></li>
+                            <li className='nav-item'>
+                                <NavLink to="/" end className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>HOME</NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                <NavLink to="/services" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>SERVICES</NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                <NavLink to="/portfolio" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>PORTFOLIO</NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                <NavLink to="/contacts" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>CONTACT</NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                <NavLink to="/mentions-legales" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>MENTIONS LÉGALES</NavLink>
+                            </li>
                         </ul>
                     </div>
                 </Container>
