@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import imagePrincipale from '../assets/img/hero-bg.jpg'
 import photoJohn from '../assets/img/john-doe-about.jpg'
@@ -5,6 +7,19 @@ import './home.css'
 
 
 function Home() {
+  const [user, setUser] = useState(null);
+
+
+  useEffect(() => {
+    const fetchUser = async () => {
+        const res = await fetch("https://api.github.com/users/github-john-doe");
+
+        const data = await res.json();
+        setUser(data);
+    };
+
+    fetchUser();
+  }, []);
 
   return (
     <>
@@ -13,9 +28,36 @@ function Home() {
         <div className='container text-white text-center'>
           <h1 className='display-1 fw-bold'>Bonjour, je suis John Doe</h1>
           <h2 className='display-4 fw-bold'>Développeur Web Full Stack</h2>
-          <button className='btn btn-danger'>En savoir plus</button>
+          <button className='btn btn-danger' type="button" data-bs-toggle="modal" data-bs-target="#johndoeModal">En savoir plus</button>
         </div>
       </div>
+
+
+      {/* <!-- Modal --> */}
+      <div className="modal fade" id="johndoeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered ">
+          <div className="modal-content">
+            <div className="modal-header bg-dark text-light">
+              <h1 className="modal-title fs-5" id="exampleModalLabel">Mon profil Github</h1>
+              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body bg-dark text-white d-flex flex-column align-items-start">
+              <img src={user.avatar_url} alt={user.login} className="" width="120"/>
+              <p className="border-secondary border-1 border-bottom w-100">{user.name}</p>
+              <p className="border-secondary border-1 border-bottom w-100">NOTHING</p>
+              <p className="border-secondary border-1 border-bottom w-100">Repositories : {user.public_repos}</p>
+              <p className="border-secondary border-1 border-bottom w-100">Followers : {user.followers}</p>
+              <p className="">Following : {user.following}</p>
+
+            </div>
+            <div className="modal-footer bg-dark text-white">
+              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
       <div className='container d-flex flex-column flex-md-row'>
         <div className='container w-md-50'>
