@@ -4,9 +4,7 @@ import TitrePage from '../components/TitrePage'
 import { CiMap, CiLocationOn } from "react-icons/ci";
 import { FiSmartphone } from "react-icons/fi";
 import { BsEnvelopeAt } from "react-icons/bs";
-import { FaGlobe } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
-import { FaGlobeEurope } from "react-icons/fa";
 
 import './mentionsLegales.css'
 
