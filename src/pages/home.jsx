@@ -48,7 +48,6 @@ function Home() {
               <p className="border-secondary border-1 border-bottom w-100">Repositories : {user.public_repos}</p>
               <p className="border-secondary border-1 border-bottom w-100">Followers : {user.followers}</p>
               <p className="">Following : {user.following}</p>
-
             </div>
             <div className="modal-footer bg-dark text-white">
               <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
@@ -56,8 +55,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-
 
       <div className='container d-flex flex-column flex-md-row'>
         <div className='container w-md-50'>
