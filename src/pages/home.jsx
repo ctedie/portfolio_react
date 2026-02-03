@@ -11,7 +11,6 @@ function Home() {
 
 
   useEffect(() => {
-
     const fetchUser = async () => {
         const res = await fetch("https://api.github.com/users/github-john-doe");
 
@@ -33,32 +32,30 @@ function Home() {
         </div>
       </div>
 
-{/* Modal Example */}
 
-{/* <!-- Modal --> */}
-<div className="modal fade" id="johndoeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog modal-dialog-centered ">
-    <div className="modal-content">
-      <div className="modal-header bg-dark text-light">
-        <h1 className="modal-title fs-5" id="exampleModalLabel">Mon profil Github</h1>
-        <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div className="modal-body bg-dark text-white d-flex flex-column align-items-start">
-         <img src={user.avatar_url} alt={user.login} className="" width="120"/>
-         <p className="border-secondary border-1 border-bottom w-100">{user.name}</p>
-         <p className="border-secondary border-1 border-bottom w-100">NOTHING</p>
-         <p className="border-secondary border-1 border-bottom w-100">Repositories : {user.public_repos}</p>
-         <p className="border-secondary border-1 border-bottom w-100">Followers : {user.followers}</p>
-         <p className="">Following : {user.following}</p>
+      {/* <!-- Modal --> */}
+      <div className="modal fade" id="johndoeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered ">
+          <div className="modal-content">
+            <div className="modal-header bg-dark text-light">
+              <h1 className="modal-title fs-5" id="exampleModalLabel">Mon profil Github</h1>
+              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body bg-dark text-white d-flex flex-column align-items-start">
+              <img src={user.avatar_url} alt={user.login} className="" width="120"/>
+              <p className="border-secondary border-1 border-bottom w-100">{user.name}</p>
+              <p className="border-secondary border-1 border-bottom w-100">NOTHING</p>
+              <p className="border-secondary border-1 border-bottom w-100">Repositories : {user.public_repos}</p>
+              <p className="border-secondary border-1 border-bottom w-100">Followers : {user.followers}</p>
+              <p className="">Following : {user.following}</p>
 
+            </div>
+            <div className="modal-footer bg-dark text-white">
+              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="modal-footer bg-dark text-white">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-    </div>
-  </div>
-</div>
-{/* End Modal Example */}
 
 
 
