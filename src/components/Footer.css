@@ -1,5 +1,5 @@
 .nav-link {
-  color: var(--bs-light); /* couleur par défaut */
+  color: var(--bs-secondary); /* couleur par défaut */
   transition: color 0.2s ease;
 }
 
