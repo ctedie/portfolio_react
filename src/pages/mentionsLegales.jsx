@@ -5,6 +5,8 @@ import { CiMap, CiLocationOn } from "react-icons/ci";
 import { FiSmartphone } from "react-icons/fi";
 import { BsEnvelopeAt } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
+import { BsGlobe } from "react-icons/bs";
+import { FaGlobeEurope } from "react-icons/fa";
 
 import './mentionsLegales.css'
 
@@ -43,7 +45,7 @@ function MentionsLegales() {
               <div>
                 <h2 id='titre-hebergeur'>alwaysdata</h2>
                 <p>91 Rue Faubourge Saint-Honoré, 75008 Paris</p>
-                <a href="#"><FaGlobe className="me-2 icon" />www.alwaysdata.com</a> {/* TODO : Ajouter le lien et l'icone*/ }
+                <BsGlobe className="me-2 icon" /><a href="https://www.alwaysdata.com" target="_blank">www.alwaysdata.com</a>
               </div>
             </div>
           </div>
