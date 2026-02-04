@@ -19,16 +19,16 @@ function Contacts() {
           <TitrSectionsContact titre="Formulaire de contact" />
           <form className=' mb-5 '>
             <div className="mb-3">
-              <input type="text" className="form-control" id="name" placeholder="Votre nom" />
+              <input type="text" className="form-control" id="name" placeholder="Votre nom" required/>
             </div>
             <div className="mb-3">
-              <input type="email" className="form-control" id="email" placeholder="Votre adresse mail" />
+              <input type="email" className="form-control" id="email" placeholder="Votre adresse mail" required/>
             </div>
             <div className="mb-3">
-              <input type="tel" className="form-control" id="telephone" placeholder="Votre numéro de téléphone" />
+              <input type="tel" className="form-control" id="telephone" placeholder="Votre numéro de téléphone" required/>
             </div>
             <div className="mb-3">
-              <textarea className="form-control" id="message" rows="3" placeholder="Sujet"></textarea>
+              <textarea className="form-control" id="message" rows="3" placeholder="Sujet" required></textarea>
             </div>
             <button className="btn btn-primary d-block mx-auto" type="submit">Envoyer</button>
           </form>
