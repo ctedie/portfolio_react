@@ -3,6 +3,13 @@ import { useEffect, useState } from "react";
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import imagePrincipale from '../assets/img/hero-bg.jpg'
 import photoJohn from '../assets/img/john-doe-about.jpg'
+
+import { IoPersonOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
+import { BsCardText } from "react-icons/bs";
+import { BsBox } from "react-icons/bs";
+import { IoPeopleOutline } from "react-icons/io5";
+
 import './home.css'
 
 
@@ -44,15 +51,19 @@ function Home() {
               <h1 className="modal-title fs-5" id="exampleModalLabel">Mon profil Github</h1>
               <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div className="modal-body bg-dark text-white d-flex flex-column align-items-start">
+            <div className="container modal-body bg-dark text-white d-flex flex-column align-items-start">
               {user ? (
-                <>
-                  <img src={user.avatar_url} alt="Photo de profil de John Doe"/>
-                  <p className="border-bottom border-secondary w-100"><a href="https://github.com/JohnDoe" target="_blank">{user.name}</a></p>
-                  <p className="border-bottom border-secondary w-100">Repositories : {user.public_repos}</p>
-                  <p className="border-bottom border-secondary w-100">Followers : {user.followers}</p>
-                  <p>Following : {user.following}</p>
-                </>
+                <div className="container d-flex flex-md-row align-items-center">
+                  <div className="w-50"><img className="img-fluid" src={user.avatar_url} alt="Photo de profil de John Doe"/></div>
+                  <div className="w-50">
+                    <p className="border-bottom border-secondary w-100"><IoPersonOutline className="me-2" /><a href="https://github.com/JohnDoe" target="_blank">{user.name}</a></p>
+                    <p className="border-bottom border-secondary w-100"><IoLocationOutline className="me-2" />{user.location}</p>
+                    <p className="border-bottom border-secondary w-100"><BsCardText className="me-2" />{user.bio}</p>
+                    <p className="border-bottom border-secondary w-100"><BsBox className="me-2" />Repositories : {user.public_repos}</p>
+                    <p className="border-bottom border-secondary w-100"><IoPeopleOutline className="me-2" />Followers : {user.followers}</p>
+                    <p><IoPeopleOutline className="me-2" />Following : {user.following}</p>
+                  </div>
+                </div>
               ) : (
                 <p>Chargement du profil...</p>
               )}
