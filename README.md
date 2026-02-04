@@ -25,3 +25,5 @@ Formulaire de contact : Une interface dédiée permettant l'envoi de messages di
 
 Aspects Légaux
 Conformité : Présence d'une page de mentions légales pour répondre aux obligations juridiques liées à l'édition d'un service de communication au public en ligne.
+
+Il est necessaire d'avoir React+vite d'installé sur la machine.
